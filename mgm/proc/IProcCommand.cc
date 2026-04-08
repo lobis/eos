@@ -333,6 +333,8 @@ IProcCommand::ConvertOutputToJsonFormat(const std::string& stdOut)
     StringConversion::ReplaceMapKey(map, "lru", "lru.status");
     StringConversion::ReplaceMapKey(map, "balancer", "balancer.status");
     StringConversion::ReplaceMapKey(map, "converter", "converter.status");
+    StringConversion::ReplaceMapKey(map, "inspector", "inspector.status");
+    StringConversion::ReplaceMapKey(map, "groupdrainer", "groupdrainer.status");
 
     for (auto& it : map) {
       std::vector<std::string> token;
